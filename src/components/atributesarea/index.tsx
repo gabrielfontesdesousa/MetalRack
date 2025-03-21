@@ -1,7 +1,7 @@
 export default function AtributesArea(){
 	return(
 		<div className="max-w-[100%] justify-center items-center">
-			<ul className="flex flex-row items-center justify-center">
+			<ul className="flex flex-row items-center justify-center bg-black">
 				<li className="flex flex-row items-center justify-center">
 					<img  className="w-[80px]" src="../src/assets/paleteicon.svg" alt="" />
 					<p className="pl-[25px] w-[45%] text-white font-[MontSerrat] text-[14px]  font-[200]">Racks feitos em metal galvanizado, garantindo longa vida útil e máxima segurança para o seu estoque.</p>

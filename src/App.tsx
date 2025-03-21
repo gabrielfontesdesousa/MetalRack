@@ -3,6 +3,8 @@ import Header from './components/header'
 import Home from './components/home'
 import SpecificationsArea from './components/specifications'
 import ExampleArea from './components/example'
+import FormArea from './components/form'
+
 function App() {
 
   return (
@@ -10,7 +12,8 @@ function App() {
       <Header></Header>
         <Home></Home>
         <SpecificationsArea></SpecificationsArea>
-        <ExampleArea></ExampleArea>
+        <ExampleArea></ExampleArea >
+        <FormArea></FormArea>
     </main>
   )
 }
