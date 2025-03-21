@@ -1,0 +1,47 @@
+.button-header {
+  --color: #ffffff;
+  font-family: inherit;
+  display: inline-block;
+  width: 23em;
+  height: 2.9em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 26px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 50px;
+  position: relative;
+}
+
+.button-header::before {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  width: 200px;
+  height: 190px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.button-header:hover {
+  color: black;
+}
+
+.button-header:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.4s all;
+}
+
+.button-header:hover::before {
+  top: -70px;
+  left: 0px;
+}
+.button-header a{
+  font-family: 'MontSerrat', sans-serif;
+  font-weight: 400;
+  transition: 0.4s all;
+}
