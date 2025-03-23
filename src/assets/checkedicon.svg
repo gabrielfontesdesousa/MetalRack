@@ -1,19 +1,6 @@
-<svg width="121" height="120" viewBox="0 0 121 120" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g filter="url(#filter0_i_17_44)">
-<rect x="0.980469" y="0.670166" width="119" height="119" transform="rotate(-0.286847 0.980469 0.670166)" fill="url(#pattern0_17_44)"/>
-</g>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="0.805231" y="1.17791" width="118" height="118" transform="rotate(-0.286847 0.805231 1.17791)" fill="url(#pattern0_17_44)" stroke="black"/>
 <defs>
-<filter id="filter0_i_17_44" x="0.980469" y="0.0744629" width="119.594" height="123.594" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="10" operator="erode" in="SourceAlpha" result="effect1_innerShadow_17_44"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="100"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0"/>
-<feBlend mode="normal" in2="shape" result="effect1_innerShadow_17_44"/>
-</filter>
 <pattern id="pattern0_17_44" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_17_44" transform="scale(0.00390625)"/>
 </pattern>

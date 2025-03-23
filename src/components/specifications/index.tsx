@@ -4,7 +4,7 @@ export default function SpecificationsArea() {
       <div className="">
         <div className="flex max-w-[100%] justify-center items-center pt-[100px]">
           <div className="flex flex-col justify-center items-center gap-3">
-            <img className="w-[15%] " src="./src/assets/checkedicon.svg" alt="" />
+            <img className="w-[15%]" src="./src/assets/checkedicon.svg" alt="" />
             <h1 className="text-3xl md:text-5xl font-bold leading-tight text-left " style={{ fontFamily: "MontSerrat, sans-serif" }}>
               <span className="relative text-white text-[30px]">
                 Tipo

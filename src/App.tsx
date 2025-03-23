@@ -1,10 +1,9 @@
-import { useState } from 'react'
 import Header from './components/header'
 import Home from './components/home'
 import SpecificationsArea from './components/specifications'
 import ExampleArea from './components/example'
-import FormArea from './components/form'
-
+import FormArea from './components/formarea'
+import Footer from './components/footer'
 function App() {
 
   return (
@@ -14,7 +13,9 @@ function App() {
         <SpecificationsArea></SpecificationsArea>
         <ExampleArea></ExampleArea >
         <FormArea></FormArea>
+        <Footer></Footer>
     </main>
+
   )
 }
 
