@@ -1,8 +1,20 @@
 import ProductFigureHome from "../productfigurehome";
 import CallToActionArea from "../calltoactionarea";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 export default function ActionArea(){
+  const [isVisible, setIsVisible] = useState(false);
+  console.log(isVisible)
+  useEffect(() => {
+    setIsVisible(true); // Ativa a animação quando o componente é montado
+  }, []);
   return(
-    <div className='flex'>
+    <motion.div
+    initial={{ y: 100, opacity: 0 }} // Começa de baixo e invisível
+    animate={{ y: 0, opacity: 1 }} // Anima para a posição normal
+    transition={{ duration: 1, ease: "easeOut" }}
+    className='flex' >
+
       <div className="ml-[200px] mt-[100px] flex text-white px-6 max-w-[40%]">
         <div className="text-center">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight text-left " style={{fontFamily: "MontSerrat, sans-serif"}}>
@@ -24,6 +36,6 @@ export default function ActionArea(){
         </div>
       </div>
        <ProductFigureHome></ProductFigureHome>
-    </div>
+    </motion.div>
   );
 }
