@@ -5,7 +5,7 @@ export default function ExampleArea() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center 90%"], // Ativa a animação ao entrar na tela
+    offset: ["start end", "center 60%"], // Ativa a animação ao entrar na tela
   });
 
 

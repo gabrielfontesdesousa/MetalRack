@@ -12,11 +12,15 @@ export default function ActionArea(){
     <motion.div
     initial={{ y: 100, opacity: 0 }} // Começa de baixo e invisível
     animate={{ y: 0, opacity: 1 }} // Anima para a posição normal
-    transition={{ duration: 1, ease: "easeOut" }}
+    transition={{ duration: 1.2, ease: "anticipate" }}
     className='flex' >
 
       <div className="ml-[200px] mt-[100px] flex text-white px-6 max-w-[40%]">
-        <div className="text-center">
+        <motion.div
+        initial={{ x: -200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="text-center">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight text-left " style={{fontFamily: "MontSerrat, sans-serif"}}>
           <span className="relative">
               Organize
@@ -33,7 +37,7 @@ export default function ActionArea(){
             estoque. Peça já o seu!
           </p>
           <CallToActionArea></CallToActionArea>
-        </div>
+        </motion.div>
       </div>
        <ProductFigureHome></ProductFigureHome>
     </motion.div>

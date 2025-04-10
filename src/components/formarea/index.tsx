@@ -5,7 +5,7 @@ export default function FormArea() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center 80%"], // A animação começa quando a div entra na tela
+    offset: ["start end", "center 60%"], // A animação começa quando a div entra na tela
   });
 
   // Animações para a div com base no scroll

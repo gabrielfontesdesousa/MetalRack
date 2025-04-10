@@ -7,7 +7,7 @@ export default function SpecificationsArea() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["-120% end", "center 80%"], // Ativa a animação ao entrar na tela
+    offset: ["-50% end", "center 80%"], // Ativa a animação ao entrar na tela
   });
 
   // Animações baseadas no scroll
@@ -41,7 +41,7 @@ export default function SpecificationsArea() {
             <img className="w-[15%] " src="./src/assets/checkedicon.svg" alt="" />
             <h1 className="text-3xl md:text-5xl font-bold leading-tight text-left " style={{ fontFamily: "MontSerrat, sans-serif" }}>
               <span className="relative text-white text-[30px]">
-                Tipo
+              Estrutura
                 <span className="absolute mt-[1px] left-0 bottom-[-7px] w-full h-1.5 bg-orange-500"></span>
               </span>
             </h1>
