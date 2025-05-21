@@ -1,5 +1,10 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import exemplo1 from '../../assets/exemplo1.png'
+import exemplo2 from '../../assets/exemplo2.png'
+import exemplo3 from '../../assets/exemplo3.png'
+
+
 
 export default function ExampleArea() {
   const ref = useRef(null);
@@ -29,19 +34,19 @@ export default function ExampleArea() {
       opacity}} className="flex justify-center items-center" >
         <div className="flex content-around justify-around  w-[80%] ">
           <div className="w-[25%] flex justify-center flex-col">
-            <img className="w-[99%]" src="./src/assets/exemplo1.png" alt="" />
+            <img className="w-[99%]" src={exemplo1} alt="" />
             <div className="flex h-[80px] bg-[#E2E2E2] justify-center w-[99%] items-center rounded-b-[20px]">
               <h1 className="text-center font-[montserrat text-[30px] font-[400]">Organização</h1>
             </div>
           </div>
           <div className="w-[25%] flex justify-center flex-col">
-            <img className="w-[100%]" src="./src/assets/exemplo2.png" alt="" />
+            <img className="w-[100%]" src={exemplo2} alt="" />
             <div className="flex h-[80px] bg-[#E2E2E2] justify-center w-[99%] items-center rounded-b-[20px]">
               <h1 className="text-center font-[montserrat text-[30px] font-[400]">Praticidade</h1>
             </div>
           </div>
           <div className="w-[25%] flex justify-center flex-col">
-            <img className="w-[99%]" src="./src/assets/exemplo3.png" alt="" />
+            <img className="w-[99%]" src={exemplo3} alt="" />
             <div className="flex h-[80px] bg-[#E2E2E2] justify-center w-[99%] items-center rounded-b-[20px]">
               <h1 className="text-center font-[montserrat text-[30px] font-[400]">Eficiência</h1>
             </div>

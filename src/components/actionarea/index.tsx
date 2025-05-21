@@ -6,12 +6,12 @@ export default function ActionArea(){
   const [isVisible, setIsVisible] = useState(false);
   console.log(isVisible)
   useEffect(() => {
-    setIsVisible(true); // Ativa a animação quando o componente é montado
+    setIsVisible(true);
   }, []);
   return(
     <motion.div
-    initial={{ y: 100, opacity: 0 }} // Começa de baixo e invisível
-    animate={{ y: 0, opacity: 1 }} // Anima para a posição normal
+    initial={{ y: 100, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 1.2, ease: "anticipate" }}
     className='flex' >
 

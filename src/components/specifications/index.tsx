@@ -1,7 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { useEffect } from "react";
-
+import checkedicon from "../../assets/checkedicon.svg";
 
 export default function SpecificationsArea() {
   const ref = useRef(null);
@@ -22,7 +21,7 @@ export default function SpecificationsArea() {
         x,
         opacity}} className="flex max-w-[100%] justify-center items-center pt-[100px]">
           <div className="flex flex-col justify-center items-center gap-3">
-            <img className="w-[15%]" src="./src/assets/checkedicon.svg" alt="" />
+            <img className="w-[15%]" src={checkedicon} alt="" />
             <h1 className="text-3xl md:text-5xl font-bold leading-tight text-left " style={{ fontFamily: "MontSerrat, sans-serif" }}>
               <span className="relative text-white text-[30px]">
                 Tipo
@@ -38,7 +37,7 @@ export default function SpecificationsArea() {
         x,
         opacity}} className="flex max-w-[100%] justify-center items-center py-[100px]">
           <div className="flex flex-col justify-center items-center gap-3">
-            <img className="w-[15%] " src="./src/assets/checkedicon.svg" alt="" />
+            <img className="w-[15%] " src={checkedicon} alt="" />
             <h1 className="text-3xl md:text-5xl font-bold leading-tight text-left " style={{ fontFamily: "MontSerrat, sans-serif" }}>
               <span className="relative text-white text-[30px]">
               Estrutura
@@ -67,7 +66,7 @@ export default function SpecificationsArea() {
         x,
         opacity}} className="flex max-w-[100%] justify-center items-center pt-[100px]">
           <div className="flex flex-col justify-center items-center gap-3">
-            <img className="w-[15%]" src="./src/assets/checkedicon.svg" alt="" />
+            <img className="w-[15%]" src={checkedicon} alt="" />
             <h1 className="text-3xl md:text-5xl font-bold leading-tight text-left " style={{ fontFamily: "MontSerrat, sans-serif" }}>
               <span className="relative text-white text-[30px]">
                 Tipo
@@ -81,11 +80,11 @@ export default function SpecificationsArea() {
         <div className="flex max-w-[100%] justify-center items-center pt-[100px]">
         <motion.div
       ref={ref}
-      initial={{ x: 100, opacity: 0 }} // Começa da direita e invisível
-      animate={{ x: 0, opacity: 1 }} // Anima para a posição normal
-      transition={{ duration: 1, ease: "easeOut" }} // Suaviza a transição
+      initial={{ x: 100, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
       style={{opacity, x}} className="flex flex-col justify-center items-center gap-3 max-w-[60% ]" >
-            <img className="w-[15%] " src="./src/assets/checkedicon.svg" alt="" />
+            <img className="w-[15%] " src={checkedicon} alt="" />
             <h1 className="text-3xl md:text-5xl font-bold leading-tight text-left " style={{ fontFamily: "MontSerrat, sans-serif" }}>
               <span className="relative text-white text-[30px]">
                 Tipo

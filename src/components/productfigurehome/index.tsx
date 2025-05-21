@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import empilhadeira from '../../assets/Empilhadeira.svg'
 export default function ProductFigureHome(){
   return(
     <motion.div
@@ -7,7 +7,7 @@ export default function ProductFigureHome(){
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.8, ease: "easeOut" }}
     className="pl-[08%] items-end">
-      <img className="w-[90%]"  src="./src/assets/Empilhadeira.svg" alt="" />
+      <img className="w-[90%]"  src={empilhadeira} alt="" />
     </motion.div>
   );
 }

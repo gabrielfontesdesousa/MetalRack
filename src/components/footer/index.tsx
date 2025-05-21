@@ -1,9 +1,10 @@
+import logofooter from '../../assets/logo-header.png'
 export default function Footer() {
   return (
     <footer className=" h-[400px] w-full bg-[#272727]  absolute ">
       <div className="flex w-[100%] h-[400px]">
         <div className=" w-[30%] h-[100%] flex items-center ml-[1%]">
-          <img className="w-[25%]" src="./src/assets/logo-header.png" alt="" />
+          <img className="w-[25%]" src={logofooter} alt="" />
         </div>
         <div className=" w-[20%] h-[100%] flex justify-center items-center">
             <ul className="flex flex-col gap-5" >
