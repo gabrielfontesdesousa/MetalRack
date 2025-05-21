@@ -1,15 +1,15 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import checkedicon from "../../assets/checkedicon.svg";
+import rackimage from '../../assets/rackimage.svg'
 
 export default function SpecificationsArea() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["-50% end", "center 80%"], // Ativa a animação ao entrar na tela
+    offset: ["-50% end", "center 80%"],
   });
 
-  // Animações baseadas no scroll
   const x = useTransform(scrollYProgress, [0, 1], [100, 0]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
   return (
@@ -56,8 +56,7 @@ export default function SpecificationsArea() {
         x,
         opacity
       }}
-       // Substitua pela URL da sua imagem
-      alt="Imagem Animada"  className="w-[30%]" src="./src/assets/rackimage.svg" alt="" />
+      alt="Imagem Animada"  className="w-[30%]" src={rackimage} />
 
       <div>
       <motion.div
